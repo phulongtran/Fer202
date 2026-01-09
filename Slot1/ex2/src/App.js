@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './component/Card';
 
 function App() {
+  const student = {
+    id: 1,
+    name: 'Trần Phú Long',
+    avatar: 'logo192.png',
+    grade: '21',
+    age: 20
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Student Card</h1>
+      <Card student={student} />
     </div>
   );
 }
