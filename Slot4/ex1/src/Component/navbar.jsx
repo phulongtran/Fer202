@@ -1,29 +1,24 @@
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import '../Navbar.css';
 
 function NavbarComponent() {
   return (
-    <Navbar className="navbar-custom">
-      <Navbar.Brand href="#" className="navbar-brand">Pizza House</Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarSupportedContent" />
-      <Navbar.Collapse id="navbarSupportedContent">
-        <Nav className="me-auto navbar-menu">
-          <Nav.Link href="#" active>
-            Home
-          </Nav.Link>
-          <Nav.Link href="#">About us</Nav.Link>
-          <Nav.Link href="#">Contact</Nav.Link>
-        </Nav>
-        <Form className="Search d-flex" role="search">
-          <FormControl 
-          type="search" 
-          placeholder="Search"
-          className="search-input"/>
-          <Button variant="danger" type="submit" className="search-btn">
-            🔍
-          </Button>
-        </Form>
-      </Navbar.Collapse>
+    <Navbar expand="lg" className="navbar-custom">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          Pizza House
+        </Navbar.Brand>
+
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav className="mx-auto navbar-menu">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

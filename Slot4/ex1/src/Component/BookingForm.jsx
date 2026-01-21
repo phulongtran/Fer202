@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 function BookingForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    date: '',
-    time: '',
-    guests: 1
+    service: '',
+    requests: ''
   });
 
   const handleChange = (e) => {
@@ -20,40 +18,77 @@ function BookingForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Booking submitted!');
+    console.log('Form submitted:', formData);
+    // Handle form submission logic here
   };
 
   return (
-    <Container className="py-5">
-      <h2 className="text-center mb-4">Book a Table</h2>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" name="name" value={formData.name} onChange={handleChange} required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Phone</Form.Label>
-          <Form.Control type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Date</Form.Label>
-          <Form.Control type="date" name="date" value={formData.date} onChange={handleChange} required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Time</Form.Label>
-          <Form.Control type="time" name="time" value={formData.time} onChange={handleChange} required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Number of Guests</Form.Label>
-          <Form.Control type="number" name="guests" value={formData.guests} onChange={handleChange} min="1" required />
-        </Form.Group>
-        <Button variant="primary" type="submit">Submit Booking</Button>
-      </Form>
-    </Container>
+    <section className="text-white py-5" style={{ backgroundColor: '#1a1a1a' }}>
+      <Container>
+        <h2 className="text-center mb-5" style={{ fontSize: '36px', fontWeight: 'normal' }}>Book your table</h2>
+        <Form onSubmit={handleSubmit}>
+          <Row className="g-3 mb-3">
+            <Col md={4}>
+              <Form.Control
+                type="text"
+                name="name"
+                placeholder="Your name *"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </Col>
+            <Col md={4}>
+              <Form.Control
+                type="email"
+                name="email"
+                placeholder="Your email *"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </Col>
+            <Col md={4}>
+              <Form.Select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                required
+              >
+                <option value="">Select a Service</option>
+                <option value="dine-in">Dine In</option>
+                <option value="delivery">Delivery</option>
+                <option value="takeaway">Takeaway</option>
+                <option value="catering">Catering</option>
+              </Form.Select>
+            </Col>
+          </Row>
+          <Row className="mb-3">
+            <Col>
+              <Form.Control
+                as="textarea"
+                name="requests"
+                rows={4}
+                placeholder="Please write your requests"
+                value={formData.requests}
+                onChange={handleChange}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button 
+                type="submit" 
+                style={{ backgroundColor: '#ffc107', borderColor: '#ffc107', color: '#000' }}
+                className="fw-bold"
+              >
+                Send Message
+              </Button>
+            </Col>
+          </Row>
+        </Form>
+      </Container>
+    </section>
   );
 }
 

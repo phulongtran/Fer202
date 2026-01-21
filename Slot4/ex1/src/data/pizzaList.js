@@ -65,7 +65,7 @@ export const pizzaList = [
   },
   {
     id: 8,
-    image: 'C11.jpg',
+    image: 'C11.avif',
     name: 'Seafood Deluxe',
     price: 15.99,
     oldPrice: null,
