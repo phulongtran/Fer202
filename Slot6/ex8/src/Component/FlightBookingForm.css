@@ -1,0 +1,60 @@
+/* Wrapper tổng của form */
+.booking-wrapper {
+  width: 420px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/* Thanh vàng mỏng phía trên */
+.top-bar {
+  height: 28px;
+  background-color: #fff3cd;
+  border-bottom: 1px solid #ffeeba;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: relative;
+}
+
+/* Dấu X bên phải (chỉ là icon, không phải button) */
+.close-icon {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  font-size: 20px;
+  color: #856404;
+  cursor: default;
+  font-weight: bold;
+}
+
+/* Tiêu đề */
+.form-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 12px 16px;
+  color: #000;
+}
+
+/* Label của form */
+.booking-wrapper .form-label {
+  font-weight: 600;
+}
+
+/* Input */
+.booking-wrapper .form-control {
+  border-radius: 4px;
+}
+
+/* Nút Đặt vé */
+.booking-wrapper button {
+  padding: 8px 24px;
+  font-size: 16px;
+}
+
+/* Canh khoảng cách dưới cùng */
+.booking-wrapper form {
+  padding-bottom: 10px;
+}
