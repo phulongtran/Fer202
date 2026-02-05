@@ -1,0 +1,62 @@
+/* Pizza-themed styles for Quiz component */
+.quiz-container {
+  background: radial-gradient(circle at 10% 20%, #fff6ee 0%, #fff1e6 30%, #ffe8d0 100%);
+  min-height: 80vh;
+  padding: 2.5rem 0;
+}
+
+.quiz-card .card-header {
+  background: linear-gradient(90deg, #d35400 0%, #ff7a18 100%);
+  color: #fff;
+  border-bottom: 6px solid rgba(0,0,0,0.06);
+}
+
+.quiz-card .card-body {
+  background: #fffaf6;
+}
+
+.question-card {
+  background: linear-gradient(180deg, #fffdf8 0%, #fff6ee 100%);
+  border-left: 6px solid rgba(255,122,24,0.16);
+  padding: 0.6rem;
+}
+
+.question-card .card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #7a2b00;
+}
+
+.progress-custom .progress {
+  height: 1.4rem;
+}
+
+.alert-success, .alert-warning, .alert-danger {
+  border-radius: 8px;
+}
+
+/* Radio option spacing and hover */
+.form-check {
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  transition: background .15s ease;
+}
+.form-check:hover {
+  background: rgba(255,122,24,0.04);
+}
+
+.form-check input[type="radio"] {
+  margin-right: 0.6rem;
+}
+
+/* Button full width on small screens */
+@media (max-width: 576px) {
+  .flex-grow-1 {
+    width: 100% !important;
+  }
+}
+
+/* Header title style */
+.quiz-card .card-header h3 {
+  letter-spacing: 0.4px;
+}
