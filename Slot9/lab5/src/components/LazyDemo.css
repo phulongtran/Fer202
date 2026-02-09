@@ -1,0 +1,72 @@
+/* Dark theme for LazyDemo */
+.lazy-demo {
+  --bg: #0f1724; /* very dark blue */
+  --surface: #0b1220;
+  --card: #0f1728;
+  --muted: #9aa4b2;
+  --accent: #0ea5a4; /* new teal */
+  --accent-2: #e11d48; /* new rose */
+  color: #e6eef8;
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevent horizontal overflow */
+}
+
+.lazy-demo { background: linear-gradient(180deg, #071025 0%, rgba(7,16,37,0.6) 100%); padding:36px 16px 48px }
+
+.lazy-demo .hero {
+  background: linear-gradient(90deg, rgba(36,28,78,0.95), rgba(37,17,26,0.85));
+  color: #fff;
+  padding: 28px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.5);
+  margin-bottom: 20px;
+}
+
+.lazy-demo .hero h1 { font-size: 26px; margin-bottom: 6px; font-weight:700 }
+.lazy-demo .hero p { opacity: 0.9; margin: 0; color: var(--muted) }
+
+.lazy-demo .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center }
+.lazy-demo .btn-group-wrap .btn{ min-width:88px; border-radius:999px; padding:6px 12px }
+
+.lazy-demo .grid { display:grid; grid-template-columns:1fr 1fr; gap:22px }
+
+.lazy-demo .container { max-width:1100px; margin:0 auto; padding:0 12px }
+
+.lazy-demo .card { border-radius:12px; border:0; box-shadow: 0 8px 28px rgba(2,6,23,0.45); overflow:visible; background: linear-gradient(180deg,var(--card), rgba(12,16,28,0.6)) }
+.lazy-demo .card-header{ font-weight:700; padding:12px 16px }
+.lazy-demo .card-body{ padding:18px }
+
+.lazy-demo .user-card, .lazy-demo .post-card{ background: transparent; padding:14px; border-radius:10px }
+.lazy-demo .user-card h4 { margin:0 0 6px 0; color:var(--accent) }
+.lazy-demo .user-meta { color:var(--muted); font-size:13px }
+.lazy-demo .post-card h4 { color:var(--accent-2); font-size:16px; margin-bottom:8px }
+.lazy-demo .post-card p { color:#cfe3ff; line-height:1.6 }
+
+.lazy-demo .technical { margin-top:18px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:16px; border-radius:10px }
+
+@media (max-width:991px) { .lazy-demo .grid { grid-template-columns:1fr } }
+
+/* Controls and pills */
+.lazy-demo .controls-bar { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px }
+.lazy-demo .controls-left { display:flex; gap:8px; align-items:center }
+.lazy-demo .controls-right { color:var(--muted); font-size:14px }
+.lazy-demo .btn-ghost { background:transparent; border:1px solid rgba(255,255,255,0.06); padding:8px 12px; border-radius:999px; color:#e6eef8 }
+.lazy-demo .btn-ghost:hover { background: rgba(255,255,255,0.02) }
+
+.lazy-demo .active-pill { box-shadow:0 10px 30px rgba(14,165,164,0.12); transform:translateY(-2px) }
+
+/* Buttons override for lighter outlines */
+.lazy-demo .btn-outline-primary { color: #e6eef8; border-color: rgba(255,255,255,0.08) }
+.lazy-demo .btn-outline-success { color: #e6eef8; border-color: rgba(255,255,255,0.08) }
+.lazy-demo .btn-primary { background: var(--accent); border-color: var(--accent) }
+.lazy-demo .btn-success { background: var(--accent-2); border-color: var(--accent-2) }
+
+/* Skeleton shimmer dark */
+.skeleton { background: linear-gradient(90deg,#0b1220,#0f1724,#0b1220); background-size:200% 100%; animation:shimmer 1.2s linear infinite; border-radius:8px }
+.skeleton.title { height:18px; width:60%; margin-bottom:8px; opacity:0.6 }
+.skeleton.line { height:12px; width:100%; margin-bottom:6px; opacity:0.5 }
+.skeleton.small { height:10px; width:40% }
+@keyframes shimmer { from { background-position:200% 0 } to { background-position:-200% 0 } }
+
+.lazy-demo .user-card, .lazy-demo .post-card { transition: transform .18s ease, box-shadow .18s ease }
+.lazy-demo .user-card:hover, .lazy-demo .post-card:hover { transform: translateY(-6px); box-shadow: 0 14px 34px rgba(2,6,23,0.45) }

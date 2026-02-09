@@ -1,0 +1,28 @@
+.all-posts { background: #ffffff; min-height: 100vh }
+
+.posts-header {
+  background: #24123a; /* dark purple */
+  color: white;
+  padding: 28px 20px;
+  margin-bottom: 12px;
+}
+
+.posts-header .header-icon { font-size: 32px; margin-bottom: 8px }
+.posts-header h1 { font-size: 28px; font-weight: 700; margin: 6px 0 }
+.posts-header p { margin: 0; opacity: 0.9; color: #e6e6e6 }
+
+.all-posts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 36px;
+  align-items: start;
+}
+
+.post-item {
+  padding: 18px 0;
+}
+
+.post-title { font-size: 20px; font-weight: 800; margin: 0 0 10px; color: #111; line-height: 1.15 }
+.post-body { color: #333; font-size: 14px; margin: 0 }
+
+.container { max-width: 980px }

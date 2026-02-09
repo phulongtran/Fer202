@@ -1,0 +1,32 @@
+.all-users {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.users-header {
+  background: #24123a; /* dark purple banner */
+  color: white;
+  padding: 28px 20px;
+  margin-bottom: 8px;
+}
+
+.users-header .header-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.users-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.users-header p { margin: 0; opacity: 0.9; color: #e6e6e6 }
+
+.all-users-list { background: #fff; border-top: 1px solid #eee }
+.user-item { padding: 16px 18px; border-bottom: 1px solid #e9e9e9 }
+.user-item:hover { background: #fafafa }
+.user-name { font-weight:600; color:#222 }
+.user-email { color:#666; font-size:13px; margin-top:6px }
+
+.container { max-width: 980px }
