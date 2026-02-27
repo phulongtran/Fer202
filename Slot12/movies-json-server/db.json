@@ -1,0 +1,133 @@
+{
+  "genres": [
+    {
+      "id": "1",
+      "name": "Sci-Fi"
+    },
+    {
+      "id": "2",
+      "name": "Comedy"
+    },
+    {
+      "id": "3",
+      "name": "Drama"
+    },
+    {
+      "id": "4",
+      "name": "Horror"
+    },
+    {
+      "id": "5",
+      "name": "Romance"
+    },
+    {
+      "id": "6",
+      "name": "Action"
+    },
+    {
+      "id": "7",
+      "name": "Thriller"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "title": "Galactic Wars",
+      "description": "Epic space battles decide the fate of a fractured galaxy as rival factions clash for control.",
+      "poster": "/images/movie1.jpg",
+      "genreId": 1,
+      "year": 2022,
+      "country": "USA",
+      "duration": 132,
+      "avatar": "https://bazaarvietnam.vn/wp-content/uploads/2025/03/harper-bazaar-xem-phim-star-wars-theo-thu-tu-9.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Laugh Out Loud",
+      "description": "A feel-good comedy about friendship, failure, and second chances in a small town.",
+      "poster": "/images/movie2.jpg",
+      "genreId": 2,
+      "year": 2021,
+      "country": "UK",
+      "duration": 105,
+      "avatar": "https://xl.movieposterdb.com/10_04/2008/1194616/xl_1194616_d99b8c8f.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Deep Blue",
+      "description": "A gripping survival drama set far from shore when a voyage goes wrong.",
+      "poster": "/images/movie3.jpg",
+      "genreId": 3,
+      "year": 2019,
+      "country": "Australia",
+      "duration": 118,
+      "avatar": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23516_p_v8_ae.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Haunted House",
+      "description": "A teen dares to spend one night in a house with a dark past—and uncovers the truth.",
+      "poster": "/images/movie4.jpg",
+      "genreId": 4,
+      "year": 2020,
+      "country": "Canada",
+      "duration": 98,
+      "avatar": "https://play-lh.googleusercontent.com/z9ZfCxHepjDpRUdH2YiJCMawy5Tk0AAtGy5wHmH3wGtakaBF_Z8q2rV2h3LeBeX7eBGX"
+    },
+    {
+      "id": "5",
+      "title": "City of Love",
+      "description": "Two strangers meet in a sleepless city and rewrite their plans for life and love.",
+      "poster": "/images/movie5.jpg",
+      "genreId": 5,
+      "year": 2018,
+      "country": "France",
+      "duration": 110,
+      "avatar": "https://m.media-amazon.com/images/M/MV5BMmM1N2FjMjktYjQyYy00YWQ0LTk5NmMtMjNjY2Q5YzY1YmFmXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+      "id": "6",
+      "title": "The Time Traveler",
+      "description": "A brilliant scientist discovers a way to bend time—at a cost no one could foresee.",
+      "poster": "/images/movie6.jpg",
+      "genreId": 1,
+      "year": 2023,
+      "country": "USA",
+      "duration": 124,
+      "avatar": "https://www.studyphim.vn/system/movies/8676/thumbnails/original/b00981ec-7fd8-479d-b482-caad7753ff46.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Street Runner",
+      "description": "An ex-courier is forced back into the fast lane for one last job across the neon city.",
+      "poster": "/images/movie7.jpg",
+      "genreId": 6,
+      "year": 2021,
+      "country": "Japan",
+      "duration": 102,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3ujiL4Gf31e-eLekk4dza-gANo7mRZ1Uyw&s"
+    },
+    {
+      "id": "8",
+      "title": "Hidden Truth",
+      "description": "A reporter unravels a conspiracy that powerful people will do anything to keep buried.",
+      "poster": "/images/movie8.jpg",
+      "genreId": 7,
+      "year": 2022,
+      "country": "Germany",
+      "duration": 115,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrO3RczqZf8mB2vpEaqBLQD_cLrV0tf9Pug&s"
+    },
+    {
+      "id": "9",
+      "title": "Kingdom of Ash",
+      "description": "A fallen prince must unite rival clans to reclaim a cursed land and his destiny.",
+      "poster": "/images/movie9.jpg",
+      "genreId": 2,
+      "year": 2020,
+      "country": "New Zealand",
+      "duration": 141,
+      "avatar": "https://play-lh.googleusercontent.com/6Xh0iLrTZppSItgC6c56PgdCXPltkgD9l93M8N00wdmGmoOgFIQF3V55SrrBzD42X2FTVmN_dLgL5nfywV8"
+    }
+  ]
+}
