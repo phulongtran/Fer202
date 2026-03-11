@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "anhnv",
+      "password": "admin123",
+      "fullName": "Nguyễn Văn Anh"
+    },
+    {
+      "id": "2",
+      "username": "TamNT",
+      "password": "admin123",
+      "fullName": "Nguyễn Thị Tâm"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "2",
+      "userId": "1",
+      "name": "Electricity Bill",
+      "amount": 450000,
+      "category": "Utilities",
+      "date": "2025-10-03"
+    },
+    {
+      "id": "5",
+      "userId": "2",
+      "name": "Breakfast",
+      "amount": 40000,
+      "category": "Food",
+      "date": "2025-10-01"
+    },
+    {
+      "id": "607c",
+      "userId": "1",
+      "name": "Ben10",
+      "amount": "400,000",
+      "category": "Entertainment",
+      "date": "2026-03-06"
+    },
+    {
+      "id": "1309",
+      "userId": "1",
+      "name": "Cake",
+      "amount": "300,000",
+      "category": "Food",
+      "date": "2026-03-07"
+    },
+    {
+      "id": "04bd",
+      "userId": "1",
+      "name": "Pain",
+      "amount": "40000",
+      "category": "Entertainment",
+      "date": "2026-03-14"
+    },
+    {
+      "id": "0ada",
+      "name": "Pain",
+      "amount": "700000",
+      "category": "Entertainment",
+      "date": "2026-03-11",
+      "userId": "1"
+    }
+  ]
+}
